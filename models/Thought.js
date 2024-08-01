@@ -1,5 +1,5 @@
 const { Schema, model, Types } = require('mongoose');
-const moment = require('moment'); // Optional: use JavaScript Date if you prefer
+const moment = require('moment'); // Used for time stamp
 
 const reactionSchema = new Schema({
     reactionId: {
@@ -22,8 +22,10 @@ const reactionSchema = new Schema({
     }
 }, {
     toJSON: {
-        getters: true
-    }
+        getters: true,
+        virtuals: true
+    },
+    id: false,
 });
 
 const thoughtSchema = new Schema({
@@ -47,9 +49,11 @@ const thoughtSchema = new Schema({
     toJSON: {
         virtuals: true,
         getters: true
-    }
+    },
+    id: false,
 });
 
+// This gets the total amount of friends
 thoughtSchema.virtual('reactionCount').get(function() {
     return this.reactions.length;
 });
