@@ -14,7 +14,7 @@ module.exports = {
         .select("-__v")
         .then((thought) =>
           !thought
-            ? res.status(404).json({ message: "No Thought find with this ID!" })
+            ? res.status(404).json({ message: "No Thought found with this ID!" })
             : res.json(thought)
         )
         .catch((error) => res.status(500).json(error));
@@ -31,7 +31,7 @@ module.exports = {
         })
         .then((thought) =>
           !thought
-            ? res.status(404).json({ message: "No User find with this ID!" })
+            ? res.status(404).json({ message: "No User found with this ID!" })
             : res.json(thought)
         )
         .catch((error) => res.status(500).json(error));
@@ -45,7 +45,7 @@ module.exports = {
       )
         .then((user) =>
           !user
-            ? res.status(404).json({ message: "No thought find with this ID!" })
+            ? res.status(404).json({ message: "No thought found with this ID!" })
             : res.json(user)
         )
         .catch((error) => res.status(500).json(error));
@@ -55,7 +55,7 @@ module.exports = {
       Thought.findOneAndDelete({ _id: req.params.thoughtId })
         .then((thought) =>
           !thought
-            ? res.status(404).json({ message: "No thought find with this ID!" })
+            ? res.status(404).json({ message: "No thought found with this ID!" })
             : User.findOneAndUpdate(
                 { thoughts: req.params.thoughtId },
                 { $pull: { thoughts: req.params.thoughtId } },
@@ -78,7 +78,7 @@ module.exports = {
       )
         .then((thought) =>
           !thought
-            ? res.status(404).json({ message: "No thought frind with ID!" })
+            ? res.status(404).json({ message: "No thought found with ID!" })
             : res.json(thought)
         )
         .catch((error) => res.status(500).json(error));
@@ -94,7 +94,7 @@ module.exports = {
       )
         .then((thought) =>
           !thought
-            ? res.status(404).json({ message: "No thought find with this ID!" })
+            ? res.status(404).json({ message: "No thought found with this ID!" })
             : res.json(thought)
         )
         .catch((error) => res.status(500).json(error));
