@@ -29,23 +29,25 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 The following screenshots show examples of the application's API routes being tested in Insomnia.
 
-![Demo of GET routes to return all thoughts being tested in Insomnia.](./public/assets/Social%20Network%20Get%20All%20Thoughts.jpg)![All users tested in Insomnia](./public/assets/Social%20Network%20FindAllUsers.jpg).
+![Demo of GET routes to return all thoughts being tested in Insomnia.](./public/assets/Social%20Network%20Get%20All%20Thoughts.jpg)![All users tested in Insomnia](./public/assets/Social%20Network%20FindAllUsers.jpg)
 
 The following screenshot shows GET routes to return a single user and a single thought being tested in Insomnia:
 
-![Demo that shows GET routes to return a single user being tested in Insomnia.](./public/assets/Social%20Network%20Find%20User%20byId.jpg) ![Single thought being tested in Insomnia](./public/assets/Social%20Network%20Get%20Thought%20ById.jpg).
+![Demo shows GET routes to return a single user being tested in Insomnia.](./public/assets/Social%20Network%20Find%20User%20byId.jpg) ![Single thought being tested in Insomnia](./public/assets/Social%20Network%20Get%20Thought%20ById.jpg)
 
 The following screenshot shows the POST, PUT, and DELETE routes for users being tested in Insomnia:
 
-![Demo that shows the POST, PUT, and DELETE routes for users being tested in Insomnia.](./public/assets/Social%20Network%20Delete%20User.jpg). [Add new user](./public/assets/Social%20Network%20New%20User.jpg). [Update user](./public/assets/Social%20Network%20Update%20User.jpg).
+![Demo shows the POST, PUT, and DELETE routes for users being tested in Insomnia.](./public/assets/Social%20Network%20Delete%20User.jpg). ![Add new user](./public/assets/Social%20Network%20New%20User.jpg). ![Update user](./public/assets/Social%20Network%20Update%20User.jpg)
 
-In addition to this, your walkthrough video should show the POST, PUT, and DELETE routes for thoughts being tested in Insomnia.
+In addition to this, a walkthrough video shows the POST, PUT, and DELETE routes for thoughts being tested in Insomnia.
+![Demo shows POST, PUT, and DELETE routes for thoughts](./public/assets/Social%20Network%20AddCreate%20Thought.jpg) ![Delete thought](./public/assets/Social%20Network%20Delete%20Thought.jpg) ![Update thought](./public/assets/Social%20Network%20Update%20Thought.jpg)
 
 The following screenshot shows the POST and DELETE routes for a user’s friend list being tested in Insomnia:
 
-![Demo that shows the POST and DELETE routes for a user’s friend list being tested in Insomnia.](./public/assets/Social%20Network%20Add%20Friend.jpg). [Delete friend](./public/assets/Social%20Network%20Delete%20Friend.jpg).
+![Demo that shows the POST and DELETE routes for a user’s friend list being tested in Insomnia.](./public/assets/Social%20Network%20Add%20Friend.jpg). ![Delete friend](./public/assets/Social%20Network%20Delete%20Friend.jpg).
 
 In addition to this, your walkthrough video should show the POST and DELETE routes for reactions to thoughts being tested in Insomnia.
+![Demo that shows POST and DELETE routes for reactions on thoughts](./public/assets/Social%20Network%20Create%20Reaction.jpg) ![Delete reaction](./public/assets/Social%20Network%20Delete%20Reaction.jpg)
 
 ## Getting Started
 
@@ -57,4 +59,4 @@ Be sure to have MongoDB installed on your machine.
 1. npm install
 2. npm start
 
-## Usage
+
